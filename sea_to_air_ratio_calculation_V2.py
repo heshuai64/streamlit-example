@@ -217,7 +217,7 @@ with st.expander("批量计算产品最优海运比&供应链成本：", expande
     with col102:
         for _ in range(4):
             st.write('')
-        data_frame1 = pd.read_excel("./SKU供应链总成本试算参数模板.xlsx")
+        data_frame1 = pd.DataFrame(data=None)
         label1 = "文件上传模板下载"
         file_name1 = "SKU供应链总成本试算参数模板.xlsx"
         download_template(data_frame1, label1, file_name1)
